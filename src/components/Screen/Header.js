@@ -1,16 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Detail = () => {
+const Header = () => {
   return (
     <View>
-      <Text>Detail</Text>
+      <Text>Heade sdsdsdr</Text>
     </View>
   )
 }
 
-export default Detail
+export default Header
 
-const styles = StyleSheet.create({
-  
-})
+const styles = StyleSheet.create({})
