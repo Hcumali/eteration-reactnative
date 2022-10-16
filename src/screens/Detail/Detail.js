@@ -60,7 +60,15 @@ const styles = StyleSheet.create({
   infoView: {
     alignItems: "center",
     justifyContent: "center",
-    padding: 15
+    padding: 15,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.51,
+    shadowRadius: 13.16,
+    elevation: 20,
   },
   name: {
     fontSize: 21,

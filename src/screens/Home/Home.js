@@ -4,9 +4,14 @@ import { Screen } from '../../components'
 import { SimpsonService } from '../../services'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { colors } from '../../assets'
-import { getMyObject, setObjectValue } from "../../helpers";
+import { getMyObject, setObjectValue } from "../../helpers"
 import { connect } from 'react-redux'
-import { setList, removeCharacter, carryUp, carryDown } from '../../redux/simpsons/simpsonsSlice'
+import { 
+  setList, 
+  removeCharacter, 
+  carryUp, 
+  carryDown 
+} from '../../redux/simpsons/simpsonsSlice'
 
 const Home = (props) => {
   const [refreshing, setRefreshing] = useState(false)
