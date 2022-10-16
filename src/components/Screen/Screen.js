@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { StyleSheet, View, StatusBar } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import Header from "./Header";
@@ -12,10 +12,6 @@ const Screen = (props) => {
         showHeader,
         showBack
     } = props;
-
-    useEffect(() => {
-        console.log("props: ", props);
-    }, []);
 
   return (
     <SafeAreaProvider>
@@ -44,6 +40,6 @@ const styles = StyleSheet.create({
     },
     content: {
         flex: 1,
-        backgroundColor: colors.green,
+        backgroundColor: colors.backgroundGrey,
     },
 })

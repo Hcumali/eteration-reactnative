@@ -5,7 +5,7 @@ export default {
     black: "#000",
     brightTurquoise: "#06DEC0",
     green: "#009000",
-    backgroundGrey: "#F7F9FD",
+    backgroundGrey: "#e4ede7",
     grey1: "rgb(180,180,185)",
     grey2: "rgb(131,131,138)",
     grey3: "rgb(255,255,255)",
