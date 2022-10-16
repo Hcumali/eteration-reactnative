@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './counter';
+import simpsonReducer from './simpsons';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer
+    simpsons: simpsonReducer
   }
 });
