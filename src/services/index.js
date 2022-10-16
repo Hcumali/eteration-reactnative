@@ -1,1 +1,3 @@
-export * as SimpsonService from "./simpsons";
+import * as SimpsonService from "./simpsons";
+
+export {SimpsonService}
