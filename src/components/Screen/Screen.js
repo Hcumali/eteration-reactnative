@@ -21,7 +21,7 @@ const Screen = (props) => {
                 showHeader &&
                 <Header
                     showBack={showBack}
-                    {...this.props}
+                    {...props}
                 />
             }
             <View style={[styles.content, contentStyle]}>

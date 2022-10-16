@@ -37,7 +37,9 @@ const Home = (props) => {
   
 
   const Item = ({ item, index }) => (
-    <TouchableOpacity style={styles.row} onPress={() => console.log("press", item)}>
+    <TouchableOpacity style={styles.row} onPress={() => {
+      props.navigation.navigate("Detail", { item })
+    }}>
       <View style={styles.mainView}>
         <View style={styles.indexView}>
           <Text style={styles.index}>{index}</Text>
@@ -103,7 +105,7 @@ const Home = (props) => {
   }
   
   return (
-    <Screen showHeader>
+    <Screen showHeader {...props}>
       <View style={styles.container}>
         <FlatList
           data={props.list}
