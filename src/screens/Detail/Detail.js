@@ -60,39 +60,39 @@ const styles = StyleSheet.create({
   infoView: {
     alignItems: "center",
     justifyContent: "center",
-    padding: 15,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 10,
-    },
-    shadowOpacity: 0.51,
-    shadowRadius: 13.16,
-    elevation: 20,
+    padding: 15
   },
   name: {
     fontSize: 21,
-    fontWeight: "600",
+    fontWeight: "800",
     padding: 8
   },
   job: {
     fontSize: 18,
     fontWeight: "600",
-    color: colors.black
+    color: colors.black,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 5,
+      height: 10,
+    },
+    shadowOpacity: 0.53,
+    shadowRadius: 13.97,
+    elevation: 21
   },
   descriptionView: {
     width: "100%",
     height: "100%",
-    backgroundColor: colors.grey1,
-    borderTopStartRadius: 40,
-    borderTopEndRadius: 40
+    backgroundColor: colors.black,
+    borderTopLeftRadius: 40,
+    borderTopRightRadius: 40
   },
   description: {
     fontSize: 16,
     marginTop: "6%",
     paddingHorizontal: "6%",
     fontWeight: "500",
-    color: colors.black,
-    textAlign: "justify"
+    color: colors.white,
+    textAlign: "justify",
   }
 })

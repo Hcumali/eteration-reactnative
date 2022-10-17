@@ -3,6 +3,7 @@ export default {
     primary: "rgb(254,157,55)",
     red: "#E74C3C",
     black: "#000",
+    blue: "rgb(46,134,222)",
     brightTurquoise: "#06DEC0",
     green: "#009000",
     backgroundGrey: "#e4ede7",

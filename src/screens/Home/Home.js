@@ -123,7 +123,7 @@ const Home = (props) => {
             />
           }
         />
-        <TouchableOpacity style={styles.addButton}>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Create")} style={styles.addButton}>
             <Icon name="add-circle" size={55} color={colors.primary} />
         </TouchableOpacity>
       </View>
