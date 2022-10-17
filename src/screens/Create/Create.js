@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert, ScrollView } from 'react-native'
 import { Screen } from '../../components'
 import { colors } from '../../assets'
 import { connect } from 'react-redux'
 import { addCharacter } from '../../redux/simpsons/simpsonsSlice'
 import uuid from 'react-native-uuid';
+
 
 const isValidUrl = (urlString) => {
   var urlPattern = new RegExp('^(https?:\\/\\/)?'+
@@ -112,7 +113,7 @@ const Create = (props) => {
 
   return (
     <Screen showHeader showBack contentStyle={styles.contentStyle} {...props}>
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.row}>
           <Text style={styles.text}>Full Name</Text>
           <TextInput
@@ -180,7 +181,7 @@ const Create = (props) => {
             <Text style={styles.buttonText}>Add Character</Text>
           </View>
         </TouchableOpacity>
-      </View>
+      </ScrollView>
     </Screen>
   )
 }
@@ -245,6 +246,12 @@ const styles = StyleSheet.create({
     fontWeight: "400"
   }
 })
+
+function mapStateToProps(state) {
+  return { 
+    list: state.simpsons.simpsonsList
+  };
+} 
   
 function mapDispatchToProps(dispatch) {
   return {
@@ -252,4 +259,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
   
-export default connect(mapDispatchToProps)(Create);
+export default connect(mapStateToProps, mapDispatchToProps)(Create);
